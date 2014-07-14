@@ -10,8 +10,7 @@
 <body>
 <%
 	User user = (User)request.getAttribute("user");
-	out.println(user.getUsername());
-	out.println(user.getPassword());
+	out.println("Hello " + user.getUsername());
 %>
 
 </body>
