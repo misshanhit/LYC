@@ -1,4 +1,4 @@
-package dao;
+package com.lyc.dao;
 
 public class TeamDAO {
 

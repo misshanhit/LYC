@@ -1,8 +1,11 @@
-package model;
+package com.lyc.model;
 
 public class Member {
 	private long id;
 	private String firstName;
+	public Member(String firstName){
+		this.firstName = firstName;
+	}
 	public long getId() {
 		return id;
 	}

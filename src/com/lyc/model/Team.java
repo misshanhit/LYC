@@ -1,4 +1,4 @@
-package model;
+package com.lyc.model;
 
 public class Team {
 	private long id;

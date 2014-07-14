@@ -1,4 +1,4 @@
-package controller;
+package com.lyc.controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class TeamController
+ * Servlet implementation class TeamServlet
  */
-@WebServlet("/TeamController")
-public class TeamController extends HttpServlet {
+@WebServlet("/TeamServlet")
+public class TeamServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * Default constructor. 
      */
-    public TeamController() {
+    public TeamServlet() {
         // TODO Auto-generated constructor stub
     }
 
