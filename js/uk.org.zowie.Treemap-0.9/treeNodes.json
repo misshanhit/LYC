@@ -1,0 +1,23 @@
+new TreeParentNode( "root", [
+	new TreeNode( "a", 1 ),
+	new TreeNode( "BBBBBBBB", 2 ),
+	new TreeNode( "CCCCCC", 3 ),
+	new TreeNode( "d", 4 ),
+	new TreeNode( "e", 5 ),
+	new TreeNode( "f", 6 ),
+	new TreeNode( "g", 7 ),
+	new TreeNode( "h", 8 ),
+	new TreeNode( "i", 9 ),
+	new TreeNode( "j", 10 ),
+	new TreeNode( "k", 11 ),
+	new TreeNode( "l", 13 ),
+	new TreeNode( "m", 14 ),
+	new TreeParentNode( "n", [ new TreeNode( "Alpha", 7 ), new TreeParentNode( "Beta", [
+		new TreeNode( "apples", 1 ),
+		new TreeNode( "pears", 2 ),
+		new TreeNode( "bananas", 3 )  
+	] ) ] ),
+	new TreeNode( "o", 16 ),
+	new TreeNode( "p", 17 ), 
+	new TreeNode( "q", 18 )
+] );
