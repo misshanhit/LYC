@@ -12,4 +12,12 @@
     <servlet-name>Sign Up</servlet-name>
     <url-pattern>/SignUp.do</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>Export PDF</servlet-name>
+    <servlet-class>com.lyc.controller.ExportPDFServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Export PDF</servlet-name>
+    <url-pattern>/ExportPDF.do</url-pattern>
+  </servlet-mapping>
 </web-app>

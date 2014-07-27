@@ -20,7 +20,22 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="js/marcj-jquery-selectBox/jquery.selectbox.css" rel="stylesheet" type="text/css" />
-    
+    <style type="text/css">
+        /* Small devices (tablets, 768px and up) */
+        @media (min-width: 768px) { #search { width: 200px; }}
+
+        /* Medium devices (desktops, 992px and up) */
+        @media (min-width: 992px) { #search { width: 300px; } }
+
+        /* Large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) { #search { width: 400px; } }
+        .col-xs-2{
+            padding-left: 5px;
+        }
+        .row-margin-bottom{
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body style="font-size:12px;background:#f3f1f2">
     <nav class="navbar navbar-default navbar-static-top" style="background: #03a2a6" role="navigation">
@@ -31,15 +46,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img src="images/logo.png" class="navbar-brand"/>              
+                <img src="images/logo.png" class="navbar-brand"/>   
             </div>
-
             <div class="collapse navbar-collapse" id="navHeaderCollapse">
                 <form class="navbar-form navbar-left" role="search">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Searching team, member" id="search">
                         <div class="input-group-btn">
-                            <button class="btn" type="submit" style="background-image:url(images/search_icon.png);width:32px;height:34px;background-repeat: no-repeat;background-position:center;"></button>
+                            <button class="btn" type="submit"><i class="fa fa-search"></i></button>
                         </div>
                     </div>					
                 </form>	
@@ -51,8 +65,6 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-
-
     <div class="container"> 
         <div class="row">
             <div class="col-md-3">
@@ -91,7 +103,7 @@
                         </div>                        
                     </div>
                     <div class="panel-body" style="padding-top: 5px;padding-bottom: 5px;">
-                        <div class="row" style="margin-bottom:5px">
+                        <div class="row row-margin-bottom">
                             <div class="col-xs-2">
                                 <img src="images/team1_left.png" />
                             </div>
@@ -102,7 +114,7 @@
                                 <span class="badge text-right">3</span>
                             </div>
                         </div>
-                        <div class="row" style="margin-bottom:5px">
+                        <div class="row row-margin-bottom">
                             <div class="col-xs-2">
                                 <img src="images/team2_left.png" />
                             </div>
@@ -113,7 +125,7 @@
                                 <span class="badge text-right">5</span>
                             </div>
                         </div>
-                        <div class="row" style="margin-bottom:5px">
+                        <div class="row row-margin-bottom">
                             <div class="col-xs-2">
                                 <img src="images/team3_left.png" />
                             </div>
@@ -139,7 +151,7 @@
                         </div>
                     </div>
                     <div class="panel-body" style="padding-top: 5px;padding-bottom: 5px;">
-                        <div class="row" style="margin-bottom:5px">
+                        <div class="row row-margin-bottom">
                             <div class="col-xs-2">
                                 <img src="images/team1_follow_left.png" />
                             </div>
@@ -150,7 +162,7 @@
                                 <span class="badge text-right">1</span>
                             </div>
                         </div>
-                        <div class="row" style="margin-bottom:5px">
+                        <div class="row row-margin-bottom">
                             <div class="col-xs-2">
                                 <img src="images/team2_follow_left.png" />
                             </div>
@@ -161,7 +173,7 @@
                                 <span class="badge text-right">1</span>
                             </div>
                         </div>
-                        <div class="row" style="margin-bottom:5px">
+                        <div class="row row-margin-bottom">
                             <div class="col-xs-2">
                                 <img src="images/team3_follow_left.png" />
                             </div>
@@ -172,7 +184,7 @@
                                 <span class="badge text-right">1</span>
                             </div>
                         </div>
-                        <div class="row" style="margin-bottom:5px">
+                        <div class="row row-margin-bottom">
                             <div class="col-xs-2">
                                 <img src="images/team4_follow_left.png" />
                             </div>
@@ -205,7 +217,7 @@
                                 <span>Team members</span>
                             </div>
                             <div class="col-xs-2">
-                                <span>Export</span>
+                                <a href="ExportPDF.do"><span>Export</span></a>
                             </div>
                         </div>	
                     </div>
@@ -218,7 +230,7 @@
                                 <a href="#">Add photos/video</a>
                                 <hr noshade style="margin-top: 5px; margin-bottom: 5px">
                                 <textarea rows="2" placeholder="What are you thinking?" style="height:auto;width:100%"></textarea>
-                                <button type="submit" class="btn btn-default pull-right" style="margin-right:10px">Post</button>
+                                <button type="submit" class="btn btn-default pull-right" style="margin:5px">Post</button>
                             </form>                            
                         </div>
                     </div>
@@ -347,7 +359,7 @@
             <div class="col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-body" style="padding-top: 5px;padding-bottom: 5px;">
-                        <div class="row" style="margin-bottom:5px">
+                        <div class="row row-margin-bottom">
                             <div class="col-xs-2">
                                 <img src="images/sug_follow1.png" />
                             </div>
@@ -359,7 +371,7 @@
                                 <img src="images/follow_icon.jpg" class="pull-right" style="margin-right:5px"/>
                             </div>
                         </div> 
-                        <div class="row" style="margin-bottom:5px">
+                        <div class="row row-margin-bottom">
                             <div class="col-xs-2">
                                 <img src="images/sug_follow2.png" />
                             </div>
@@ -371,7 +383,7 @@
                                 <img src="images/follow_icon.jpg" class="pull-right" style="margin-right:5px"/>
                             </div>
                         </div> 
-                        <div class="row" style="margin-bottom:5px">
+                        <div class="row row-margin-bottom">
                             <div class="col-xs-2">
                                 <img src="images/sug_follow3.png" />
                             </div>
@@ -383,7 +395,7 @@
                                 <img src="images/follow_icon.jpg" class="pull-right" style="margin-right:5px"/>
                             </div>
                         </div> 
-                        <div class="row" style="margin-bottom:5px">
+                        <div class="row row-margin-bottom">
                             <div class="col-xs-2">
                                 <img src="images/sug_follow4.png" />
                             </div>
@@ -395,7 +407,7 @@
                                 <img src="images/follow_icon.jpg" class="pull-right" style="margin-right:5px"/>
                             </div>
                         </div> 
-                        <div class="row" style="margin-bottom:5px">
+                        <div class="row row-margin-bottom">
                             <div class="col-xs-2">
                                 <img src="images/sug_follow5.png" />
                             </div>
@@ -411,7 +423,7 @@
                 </div>
                 <div class="panel panel-default">
                     <div class="panel-body" style="padding-top: 5px;padding-bottom: 5px;">
-                        <div class="row" style="margin-bottom:5px">
+                        <div class="row row-margin-bottom">
                             <div class="col-xs-2">
                                 <img src="images/mem1.png" />
                             </div>
@@ -422,7 +434,7 @@
                                 <img src="images/mem_chat_icon.png" class="pull-right" style="margin-right:5px"/>
                             </div>
                         </div>
-                        <div class="row" style="margin-bottom:5px">
+                        <div class="row row-margin-bottom">
                             <div class="col-xs-2">
                                 <img src="images/mem2.png" />
                             </div>
@@ -433,7 +445,7 @@
                                 <img src="images/mem_chat_icon.png" class="pull-right" style="margin-right:5px"/>
                             </div>
                         </div>
-                        <div class="row" style="margin-bottom:5px">
+                        <div class="row row-margin-bottom">
                             <div class="col-xs-2">
                                 <img src="images/mem3.png" />
                             </div>
@@ -449,8 +461,8 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="jquery/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="jquery/jquery-2.1.1.min.js"></script>
-    
+    <script src="jquery/jquery-1.11.1.min.js"></script>    
+    <script src="jquery/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap-3.2.0/bootstrap.min.js"></script>
 </body>
 </html>
